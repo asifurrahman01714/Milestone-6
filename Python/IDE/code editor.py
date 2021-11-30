@@ -29,6 +29,7 @@ def run():
         text = Label(save_prompt, text='Please save your code')
         text.pack()
         return
+        
     command = f'python {file_path}'
     process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     output, error = process.communicate()
@@ -50,3 +51,6 @@ editor.pack()
 code_output = Text(height=10)
 code_output.pack()
 compiler.mainloop()
+
+
+
