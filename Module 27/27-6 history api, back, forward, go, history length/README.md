@@ -8,7 +8,6 @@ location.href
 or
 history.forward()
 ```
-
 ### Moving to a specific point in history
 ```bash
 window.history.go(-1)
