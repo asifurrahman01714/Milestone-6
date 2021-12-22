@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Local storage</title>
+</head>
+
+<body>
+
+    <h1>JS Local storage</h1>
+    <form action="">
+        <input type="text" id="key" placeholder="Enter your key">
+        <input type="text" id="value" placeholder="Enter your key">
+        <button type="save" id="submitBtn">Submit</button>
+    </form>
+    <div id="outputData">
+        <h2>Output Data</h2>
+        <ul id="outputUl">
+            
+        </ul>
+    </div>
+
+    <script>
+        const submit = document.getElementById('submitBtn');
+        submit.addEventListener('click', function () {
+            let key = document.getElementById('key').value;
+            let value = document.getElementById('value').value;
+            console.log("asif");
+            localStorage.setItem(key, value);
+            
+        });
+
+        
+            const outputUl = document.getElementById('outputUl');
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                const value = localStorage.getItem(key);
+                const li = document.createElement('li');
+                li.innerHTML = `${key} : ${value}`;
+                outputUl.appendChild(li);
+            }
+        
+        // for (let i = 0; i < localStorage.length; i++) {
+        //     let key = localStorage.key(i);
+        //     let value = localStorage.getItem(key);
+        //     let li = document.createElement('li');
+        //     li.innerHTML = `${key} : ${value}`;
+        //     outputUl.appendChild(li);
+        // }
+        console.log("10")
+        
+    </script>
+</body>
+
+</html>
