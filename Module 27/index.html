@@ -17,17 +17,24 @@
         <button type="save" id="submitBtn">Submit</button>
     </form>
     <div id="outputData">
-        <h2>Output Data</h2>
+        <h2 id="output">Output Data</h2>
         <ul id="outputUl">
             
         </ul>
     </div>
 
     <script>
+        const output = document.getElementById('output');
+        Object.assign(output.style,{
+                border: '3px solid blue',
+                color: 'red',
+                backgroundColor: 'aliceblue'
+            });
         const submit = document.getElementById('submitBtn');
         submit.addEventListener('click', function () {
             let key = document.getElementById('key').value; 
             let value = document.getElementById('value').value;
+            
             console.log("asif");
             localStorage.setItem(key, value);
             
