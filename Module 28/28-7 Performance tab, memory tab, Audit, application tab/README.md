@@ -1,0 +1,1 @@
+Check audit tab and run it to get performance of the site
