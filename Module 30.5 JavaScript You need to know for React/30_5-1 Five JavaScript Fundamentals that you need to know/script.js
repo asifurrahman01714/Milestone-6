@@ -8,3 +8,14 @@
              default parameter, rest parameter, spread operator,
              default parameter, rest parameter, spread operator
 */
+// normal function
+function add(a, b) {
+    return a + b;
+}
+const result = add(1, 2);
+console.log(result);
+
+// Arrow function
+const add1 = (a, b) => {
+    return a + b;
+}
