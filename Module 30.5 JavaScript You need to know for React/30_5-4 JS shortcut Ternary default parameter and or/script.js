@@ -23,3 +23,17 @@ function subtract(x, y) {
 }
 active? resultFunction= add(1, 2) : resultFunction = subtract(1, 2);
 console.log(resultFunction);
+
+let x;
+active && (x = 1);
+console.log(x);
+
+let y = active || 1;
+console.log(y);
+
+// Default parameter in function
+function add2(a, b = 1) {
+    return a + b;
+}
+console.log(add2(1));
+console.log(add2(1,3));
