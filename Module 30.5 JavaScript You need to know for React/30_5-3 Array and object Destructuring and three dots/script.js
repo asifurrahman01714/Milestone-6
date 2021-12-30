@@ -5,6 +5,10 @@ console.log(first, second, rest);
 const restWithoutBracket = rest.join(', ');
 console.log(restWithoutBracket);
 
+// three dots
+const newNumbers = [...numbers, 6, 7, 8];
+console.log(newNumbers);
+
 // Object destructure
 const person = {name: 'John', age: 30, job: 'developer'};
 const {name, age, job} = person;
