@@ -5,6 +5,14 @@ const vegetables = [
     { name: 'celery', type: 'vegetable' },
     { name: 'orange', type: 'fruit' },
 ];
+
+/*
+Filter function
+const filterFruit = vegetables.filter(vegetable => vegetable.type === 'fruit');
+console.log(filterFruit);
+const filterOutFruit = vegetables.filter(vegetable => vegetable.type !== 'fruit');
+console.log(filterOutFruit);
+*/
 /*
 map function
 const productNames = vegetables.map(vegetable => vegetable.name);
