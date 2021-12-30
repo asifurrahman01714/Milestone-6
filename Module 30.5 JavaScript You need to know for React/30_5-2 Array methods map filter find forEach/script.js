@@ -6,24 +6,27 @@ const vegetables = [
     { name: 'orange', type: 'fruit' },
 ];
 
-/*
-Filter function
+const findBanana = vegetables.find(vegetable => {
+    return vegetable.name === 'banana';
+});
+console.log(findBanana);
+
+// Filter function
 const filterFruit = vegetables.filter(vegetable => vegetable.type === 'fruit');
 console.log(filterFruit);
 const filterOutFruit = vegetables.filter(vegetable => vegetable.type !== 'fruit');
 console.log(filterOutFruit);
-*/
-/*
-map function
+
+
+// map function
 const productNames = vegetables.map(vegetable => vegetable.name);
 console.log(productNames);
 const productTypes = vegetables.map(vegetable => vegetable.type);
 console.log(productTypes);
-*/
 
-/*
-forEach function
+
+
+// forEach function
 vegetables.forEach(vegetable => {
     console.log(vegetable.name);
 });
-*/
